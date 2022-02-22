@@ -21,34 +21,3 @@ module.exports = {
         return decrypted;
     }
 }
-
-/*
-//encrypts with AES-256-GCM
-//@param {string} message - the message to encrypt
-//@param {string} key - the key to encrypt with
-//@return {string} the encrypted message
-function encrypt(message, key) {
-    const cipher = Crypto.createChiperIv('aes-256-gcm', )
-}
-function encrypt(message, key) {
-    const cipher = Crypto.createCipheriv('aes-256-gcm', key, key);
-    let encrypted = cipher.update(message, 'utf8', 'hex');
-    encrypted += cipher.final('hex');
-    //return encrypted;
-    console.log(encrypted);
-}
-
-
-//decrypts with AES-256-GCM
-//@param {string} message - the message to decrypt
-//@param {string} key - the key to decrypt with
-//@return {string} the decrypted message
-function decrypt(message, key) {
-    const decipher = Crypto.createDecipheriv('aes-256-gcm', key, key);
-    let decrypted = decipher.update(message, 'hex', 'utf8');
-    decrypted += decipher.final('utf8');
-    return decrypted;
-}
-
-exports.encrypts = encrypt;
-exports.decrypts = decrypt;*/
